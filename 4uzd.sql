@@ -1,5 +1,5 @@
 -- 4)a
-CREATE TABLE IF NOT EXISTS `Genres` (`genreId` int(11) NOT NULL AUTO_INCREMENT, `genre` varchar(255) NOT NULL, PRIMARY KEY (`genreId`)) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+CREATE TABLE IF NOT EXISTS `Genres` (`genreId` int(11) NOT NULL AUTO_INCREMENT, `genre` varchar(255) NOT NULL, PRIMARY KEY (`genreId`));
 ALTER TABLE Books ADD genreId int(11) NOT NULL AFTER bookId;
 INSERT INTO Genres (genre) VALUES ('Programming');
 INSERT INTO Genres (genre) VALUES ('Networking');
